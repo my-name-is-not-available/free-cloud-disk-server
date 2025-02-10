@@ -19,7 +19,7 @@ const storage = multer.diskStorage({
 // 初始化multer
 const upload = multer({
     storage: storage,
-    limits: { fileSize: 1000000 } // 限制文件大小为1MB
+    limits: { fileSize: 193986560 } 
 });
 
 // 创建上传目录
