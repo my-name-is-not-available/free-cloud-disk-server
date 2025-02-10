@@ -34,7 +34,7 @@ $ npm install forever -g
 ```
 运行：
 ```bash
-forever start index.js
+$ forever start index.js
 ```
 ## 使用方法
 额。。不想写，你翻翻`index.js`吧，总共没几行
