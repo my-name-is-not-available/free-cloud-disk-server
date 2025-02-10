@@ -16,14 +16,27 @@ https://github.com/my-name-is-not-available/free-cloud-disk-server.git
 glitch会为每个项目都分配一个域名，请保存好这个域名，在后续的版本中会作为连接云盘的重要凭证。
 ### 安装在个人服务器
 复制本项目的`package.json`和`index.js`到服务器中
+
 运行命令：
 
 ```bash
-npm install
+$ npm install
 ```
 根据想要分配的容量修改`index.js`中的size数，默认为193986560（单位字节）~~当前版本没有任何卵用~~
+
 为后续版本需要，请自行分配一个域名/公网IP，可以自行修改端口号为80（默认3000）
 
+#### 推荐使用`forever`来保持运行状态
+
+forever安装：
+```bash
+$ npm install forever -g
+```
+运行：
+```bash
+forever start index.js
+```
 ## 使用方法
 额。。不想写，你翻翻`index.js`吧，总共没几行
-现阶段几乎无法日常使用，建议等更新[确信]
+
+现阶段几乎无法日常使用，单用户下载速度慢的感人，建议等更新[确信]
